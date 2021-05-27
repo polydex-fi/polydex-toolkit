@@ -13,16 +13,11 @@ const connectors: Config[] = [
     icon: Metamask,
     connectorId: ConnectorNames.Injected,
   },
-  {
-    title: "TrustWallet",
-    icon: TrustWallet,
-    connectorId: ConnectorNames.Injected,
-  },
-  {
-    title: "MathWallet",
-    icon: MathWallet,
-    connectorId: ConnectorNames.Injected,
-  },
+  // {
+  //   title: "MathWallet",
+  //   icon: MathWallet,
+  //   connectorId: ConnectorNames.Injected,
+  // },
   {
     title: "TokenPocket",
     icon: TokenPocket,
@@ -33,16 +28,16 @@ const connectors: Config[] = [
     icon: WalletConnect,
     connectorId: ConnectorNames.WalletConnect,
   },
-  {
-    title: "Binance Chain Wallet",
-    icon: BinanceChain,
-    connectorId: ConnectorNames.BSC,
-  },
-  {
-    title: "SafePal Wallet",
-    icon: SafePalWallet,
-    connectorId: ConnectorNames.Injected,
-  },
+  // {
+  //   title: "Binance Chain Wallet",
+  //   icon: BinanceChain,
+  //   connectorId: ConnectorNames.BSC,
+  // },
+  // {
+  //   title: "SafePal Wallet",
+  //   icon: SafePalWallet,
+  //   connectorId: ConnectorNames.Injected,
+  // },
 ];
 
 export default connectors;
