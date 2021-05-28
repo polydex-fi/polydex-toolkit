@@ -63,6 +63,18 @@ export const links = [
     status: status.SOON,
   },
   {
+    label: "Referral",
+    icon: "ReferralIcon",
+    href: "/referral",
+    status: status.SOON,
+  },
+  {
+    label: "Future",
+    icon: "FutureIcon",
+    href: "/future",
+    status: status.SOON,
+  },
+  {
     label: "Profile & Teams",
     icon: "GroupsIcon",
     status: status.LIVE,
