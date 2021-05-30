@@ -4,118 +4,78 @@ import { SvgProps } from "../types";
 
 const Icon: React.FC<SvgProps> = (props) => {
   return (
-    <Svg id="Layer_1" data-name="Layer 1" viewBox="0 0 357 357" {...props}>
-      <defs>
-        <style>{".cls-3{fill:#00267e}.cls-7{fill:#63e2f8}"}</style>
-        <linearGradient
-          id="linear-gradient"
-          x1={59.49}
-          y1={-3591.85}
-          x2={178.5}
-          y2={-3591.85}
-          gradientTransform="matrix(1 0 0 -1 0 -3379)"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop offset={0} stopColor="#005dcf" />
-          <stop offset={0.99} stopColor="#004acf" />
-        </linearGradient>
-        <linearGradient
-          id="linear-gradient-2"
-          x1={275.28}
-          y1={-3535.07}
-          x2={215.99}
-          y2={-3688.55}
-          gradientTransform="matrix(1 0 0 -1 0 -3379)"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop offset={0} stopColor="#00a6e5" />
-          <stop offset={1} stopColor="#006ed8" />
-        </linearGradient>
-        <linearGradient
-          id="linear-gradient-3"
-          x1={59.49}
-          y1={-3464.46}
-          x2={297.51}
-          y2={-3464.46}
-          gradientTransform="matrix(1 0 0 -1 0 -3379)"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop offset={0} stopColor="#5ae1f7" />
-          <stop offset={1} stopColor="#8df1fc" />
-        </linearGradient>
-        <linearGradient
-          id="linear-gradient-4"
-          x1={143.79}
-          y1={-3573.99}
-          x2={136.82}
-          y2={-3618.17}
-          xlinkHref="#linear-gradient"
-        />
-        <linearGradient
-          id="linear-gradient-5"
-          x1={192.88}
-          y1={-3554.33}
-          x2={185.91}
-          y2={-3621.76}
-          xlinkHref="#linear-gradient"
-        />
-        <linearGradient
-          id="linear-gradient-6"
-          x1={214.16}
-          y1={-3533.42}
-          x2={218.81}
-          y2={-3634.57}
-          xlinkHref="#linear-gradient-2"
-        />
-      </defs>
-      <circle cx={178.5} cy={178.5} r={178.5} fill="#bfd3d8" />
-      <path
-        fill="#003486"
-        d="M178.5 178.5L178.5 64.53 279.63 132.74 262.79 227.16 178.5 178.5z"
+    <Svg viewBox="0 0 773.058 773.058" {...props}>
+      <circle
+        fill="#36C3EA"
+        stroke="#0C2866"
+        strokeWidth={9}
+        strokeMiterlimit={10}
+        cx={386.529}
+        cy={386.529}
+        r={372.167}
       />
       <path
-        className="cls-3"
-        d="M178.5 178.5L178.5 58.33 94.21 129.84 94.21 227.16 178.5 178.5z"
+        fill="#FFF"
+        stroke="#0C2866"
+        strokeWidth={7.8841}
+        strokeMiterlimit={10}
+        d="M380.39 185.333s10.035-35.654 37.64-52.664l18.662 1.166s-22.159 29.023-12.781 54.218"
       />
       <path
-        fill="#00e0ff"
-        d="M262.79 267.25L279.63 236.89 178.5 178.5 79.53 235.64 94.21 267.25 178.5 286.99 262.79 267.25z"
+        fill="#FFF"
+        stroke="#0C2866"
+        strokeWidth={7.8841}
+        strokeMiterlimit={10}
+        d="M510.008 190.298l-219.175-13.699a62.133 62.133 0 00-53.887 25.14l-113.39 153.784a62.134 62.134 0 00-4.202 67.236l93.359 166.706a62.136 62.136 0 0050.338 31.654l219.175 13.699a62.133 62.133 0 0053.887-25.14l113.39-153.784a62.134 62.134 0 004.202-67.236l-93.359-166.706a62.138 62.138 0 00-50.338-31.654z"
       />
       <path
-        d="M59.49 109.79l34.72 20v97.32l84.29 48.67v40.09l-96.1-55.44a45.81 45.81 0 01-22.91-39.67z"
-        fill="url(#linear-gradient)"
+        opacity={0.3}
+        fill="#36C3EA"
+        d="M484.071 235.545l-173.137-10.821a49.084 49.084 0 00-42.568 19.859l-89.572 121.481a49.085 49.085 0 00-3.32 53.113l73.749 131.689a49.084 49.084 0 0039.764 25.005l173.137 10.821a49.084 49.084 0 0042.568-19.859l89.572-121.481a49.085 49.085 0 003.32-53.113L523.835 260.55a49.085 49.085 0 00-39.764-25.005z"
       />
       <path
-        d="M178.5 275.83l84.29-48.67v-97.32l34.72-20v111a45.81 45.81 0 01-22.91 39.67l-96.1 55.48z"
-        fill="url(#linear-gradient-2)"
+        fill="#FFF"
+        d="M484.641 267.552L306.384 256.41a46.808 46.808 0 00-39.331 17.303l-87.181 107.929c-12.498 15.472-13.853 37.152-3.379 54.06l73.063 117.944a46.805 46.805 0 0036.87 22.066l178.256 11.141a46.808 46.808 0 0039.331-17.303l87.181-107.929c12.498-15.472 13.853-37.152 3.379-54.06L521.51 289.617a46.803 46.803 0 00-36.869-22.065z"
+      />
+      <ellipse
+        transform="rotate(-86.423 467.072 433.122)"
+        fill="#0C2866"
+        cx={467.087}
+        cy={433.143}
+        rx={45.361}
+        ry={33.712}
+      />
+      <circle
+        fill="#36C3EA"
+        stroke="#0C2866"
+        strokeWidth={8.545}
+        strokeMiterlimit={10}
+        cx={437.392}
+        cy={122.63}
+        r={20.269}
       />
       <path
-        className="cls-7"
-        d="M178.5 172.57L153.52 158.15 128.54 172.57 153.52 186.99 178.5 172.57z"
+        fill="#36C3EA"
+        stroke="#0C2866"
+        strokeWidth={8.545}
+        strokeMiterlimit={10}
+        d="M140.141 333.031l-9.424-7.781c-7.812-6.451-8.505-18.178-1.505-25.503l72.288-75.648a17.444 17.444 0 0113.7-5.358l8.806.55-83.865 113.74zM640.98 364.334l10.32-6.547c8.555-5.428 10.702-16.977 4.669-25.117l-62.306-84.06a17.446 17.446 0 00-12.926-7.023l-8.806-.55 69.049 123.297z"
       />
       <path
-        d="M262.79 129.84l34.72-20-119-68.71-119 68.71 34.72 20L161.47 91a34 34 0 0134.06 0z"
-        fill="url(#linear-gradient-3)"
+        fill="none"
+        stroke="#0C2866"
+        strokeWidth={8.545}
+        strokeMiterlimit={10}
+        d="M484.071 235.545l-173.137-10.821a49.084 49.084 0 00-42.568 19.859l-89.572 121.481a49.085 49.085 0 00-3.32 53.113l73.749 131.689a49.084 49.084 0 0039.764 25.005l173.137 10.821a49.084 49.084 0 0042.568-19.859l89.572-121.481a49.085 49.085 0 003.32-53.113L523.835 260.55a49.085 49.085 0 00-39.764-25.005z"
       />
       <path
-        fill="url(#linear-gradient-4)"
-        d="M128.54 172.57L128.54 237.96 153.52 252.38 153.52 186.99 128.54 172.57z"
-      />
-      <path
-        className="cls-3"
-        d="M153.52 186.99L178.5 172.57 178.5 237.96 153.52 252.38 153.52 186.99z"
-      />
-      <path
-        className="cls-7"
-        d="M228.46 134.9L203.48 120.48 178.5 134.9 203.48 149.32 228.46 134.9z"
-      />
-      <path
-        fill="url(#linear-gradient-5)"
-        d="M178.5 134.9L178.5 237.96 203.48 252.38 203.48 149.32 178.5 134.9z"
-      />
-      <path
-        fill="url(#linear-gradient-6)"
-        d="M203.48 149.32L228.46 134.9 228.46 237.96 203.48 252.38 203.48 149.32z"
+        fill="none"
+        stroke="#0C2866"
+        strokeWidth={8.545}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeMiterlimit={10}
+        d="M268.777 420.748s40.982-21.9 70.736 12.395c0 0 1.138-16.577-3.234-22.936"
       />
     </Svg>
   );
