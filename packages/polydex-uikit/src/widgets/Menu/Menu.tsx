@@ -6,6 +6,8 @@ import Flex from "../../components/Box/Flex";
 import { useMatchBreakpoints } from "../../hooks";
 import Logo from "./components/Logo";
 import Panel from "./components/Panel";
+import Button from "../../components/Button/Button";
+import {AutoRenewIcon} from "../../components/Svg";
 import UserBlock from "./components/UserBlock";
 import { NavProps } from "./types";
 import Avatar from "./components/Avatar";
@@ -75,6 +77,8 @@ const Menu: React.FC<NavProps> = ({
   links,
   profile,
   children,
+  faucet,
+  faucetLoading
 }) => {
   const { isXl } = useMatchBreakpoints();
   const isMobile = isXl === false;
@@ -124,6 +128,18 @@ const Menu: React.FC<NavProps> = ({
           href={homeLink?.href ?? "/"}
         />
         <Flex>
+          {faucet && account && <div>
+            <Button
+              marginRight="5px"
+              scale="sm"
+              variant="success"
+              onClick={faucet}
+              isLoading={faucetLoading}
+              endIcon={faucetLoading ? <AutoRenewIcon spin color="currentColor" /> : null}
+            >
+              Faucet
+            </Button>
+          </div>}
           <UserBlock account={account} login={login} logout={logout} />
           {profile && <Avatar profile={profile} />}
         </Flex>

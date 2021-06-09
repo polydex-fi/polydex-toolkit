@@ -61,4 +61,6 @@ export interface NavProps extends PanelProps {
   login: Login;
   profile?: Profile;
   logout: () => void;
+  faucet?: () => void;
+  faucetLoading?: boolean;
 }
