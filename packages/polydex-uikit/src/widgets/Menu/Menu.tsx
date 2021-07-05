@@ -97,13 +97,14 @@ const Menu: React.FC<NavProps> = ({
       }
       // Avoid triggering anything at the bottom because of layout shift
       else if (!isBottomOfPage) {
-        if (currentOffset < refPrevOffset.current) {
-          // Has scroll up
-          setShowMenu(true);
-        } else {
-          // Has scroll down
-          setShowMenu(false);
-        }
+        // if (currentOffset < refPrevOffset.current) {
+        //   // Has scroll up
+        //   setShowMenu(false);
+        // } else {
+        //   // Has scroll down
+        //   setShowMenu(false);
+        // }
+        setShowMenu(false);
       }
       refPrevOffset.current = currentOffset;
     };
