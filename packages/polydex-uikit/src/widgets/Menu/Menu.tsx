@@ -138,7 +138,7 @@ const Menu: React.FC<NavProps> = ({
               isLoading={faucetLoading}
               endIcon={faucetLoading ? <AutoRenewIcon spin color="currentColor" /> : null}
             >
-              Faucet
+              PolyFaucet
             </Button>
           </div>}
           <UserBlock account={account} login={login} logout={logout} />
