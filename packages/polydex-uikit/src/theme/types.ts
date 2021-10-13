@@ -6,6 +6,7 @@ export type MediaQueries = {
   md: string;
   lg: string;
   xl: string;
+  xxl: string;
   nav: string;
 };
 
@@ -25,6 +26,7 @@ export type Shadows = {
   warning: string;
   focus: string;
   inset: string;
+  tooltip: string;
 };
 
 export type Gradients = {
@@ -34,6 +36,7 @@ export type Gradients = {
   blue: string;
   violet: string;
   violetAlt: string;
+  gold: string;
 };
 
 export type Colors = {
@@ -59,6 +62,7 @@ export type Colors = {
   textDisabled: string;
   textSubtle: string;
   borderColor: string;
+  disabled: string;
 
   // Gradients
   gradients: Gradients;
@@ -66,6 +70,9 @@ export type Colors = {
   // Additional colors
   binance: string;
   overlay: string;
+  gold: string;
+  silver: string;
+  bronze: string;
 };
 
 export type ZIndices = {

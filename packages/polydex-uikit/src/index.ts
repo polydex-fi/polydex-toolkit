@@ -28,6 +28,7 @@ export * from "./components/TabMenu";
 export * from "./components/Tag";
 export * from "./components/Text";
 export * from "./components/Toggle";
+export * from "./components/Message";
 
 // Hooks
 export * from "./hooks";

@@ -1,13 +1,11 @@
 import React, { useState, useEffect, useCallback, useRef } from "react";
+import { createPortal } from "react-dom";
 import { usePopper } from "react-popper";
 import { ThemeProvider, DefaultTheme } from "styled-components";
 import { light, dark } from "../../theme";
+import isTouchDevice from "../../util/isTouchDevice";
 import { StyledTooltip, Arrow } from "./StyledTooltip";
 import { TooltipOptions, TooltipRefs } from "./types";
-
-function isTouchDevice() {
-  return "ontouchstart" in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
-}
 
 const invertTheme = (currentTheme: DefaultTheme) => {
   if (currentTheme.isDark) {
@@ -15,6 +13,8 @@ const invertTheme = (currentTheme: DefaultTheme) => {
   }
   return dark;
 };
+
+const portalRoot = document.getElementById("portal-root");
 
 const useTooltip = (content: React.ReactNode, options: TooltipOptions): TooltipRefs => {
   const {
