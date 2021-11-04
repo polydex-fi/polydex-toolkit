@@ -5,6 +5,7 @@ import { LogoIcon } from "../../../components/Svg";
 import Flex from "../../../components/Box/Flex";
 import { HamburgerIcon, HamburgerCloseIcon, LogoIcon as LogoWithText } from "../icons";
 import MenuButton from "./MenuButton";
+import logo from "../../../assets/image/logo.svg";
 
 interface Props {
   isPushed: boolean;
@@ -14,8 +15,8 @@ interface Props {
 }
 
 const blink = keyframes`
-  0%,  100% { transform: scaleY(1); } 
-  50% { transform:  scaleY(0.1); } 
+  0%,  100% { transform: scaleY(1); }
+  50% { transform:  scaleY(0.1); }
 `;
 
 const StyledLink = styled(Link)`
@@ -23,17 +24,28 @@ const StyledLink = styled(Link)`
   align-items: center;
   .mobile-icon {
     width: 32px;
+
     ${({ theme }) => theme.mediaQueries.nav} {
       display: none;
     }
   }
-  .desktop-icon {
+  /* .desktop-icon {
     width: 160px;
     display: none;
     ${({ theme }) => theme.mediaQueries.nav} {
       display: block;
     }
+  } */
+
+  .celo-logo {
+    width: 160px;
+    display: none;
+
+    ${({ theme }) => theme.mediaQueries.nav} {
+      display: block;
+    }
   }
+
   .right-eye {
     animation-delay: 20ms;
   }
@@ -53,7 +65,9 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
   const innerLogo = (
     <>
       <LogoIcon className="mobile-icon" />
-      <LogoWithText className="desktop-icon" isDark={isDark} />
+      {/* <LogoWithText className="desktop-icon" isDark={isDark} /> */}
+
+      <img className="celo-logo" src="https://storage.googleapis.com/polydex/celodex.svg" alt="logo" />
     </>
   );
 

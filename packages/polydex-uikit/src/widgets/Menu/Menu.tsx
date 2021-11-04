@@ -3,18 +3,141 @@ import styled from "styled-components";
 import throttle from "lodash/throttle";
 import Overlay from "../../components/Overlay/Overlay";
 import Flex from "../../components/Box/Flex";
+import Dropdown from "../../components/Dropdown/Dropdown";
+import Link from "../../components/Link/Link";
 import { useMatchBreakpoints } from "../../hooks";
 import Logo from "./components/Logo";
 import Panel from "./components/Panel";
 import Button from "../../components/Button/Button";
-import {AutoRenewIcon} from "../../components/Svg";
+import { AutoRenewIcon } from "../../components/Svg";
 import UserBlock from "./components/UserBlock";
 import { NavProps } from "./types";
-import { MENU_HEIGHT, SIDEBAR_WIDTH_REDUCED, SIDEBAR_WIDTH_FULL } from "./config";
+import { MENU_HEIGHT, SIDEBAR_WIDTH_REDUCED, SIDEBAR_WIDTH_FULL, socials } from "./config";
+
+import polygon from "../../assets/image/polygon.svg";
+import celo from "../../assets/image/celo.svg";
+import PLV_ic_Discord from "../../assets/image/PLV_ic_Discord.svg";
+import PLV_ic_Email from "../../assets/image/PLV_ic_Email.svg";
+import PLV_ic_Medium from "../../assets/image/PLV_ic_Medium.svg";
+import PLV_ic_Telegram from "../../assets/image/PLV_ic_Telegram.svg";
+import PLV_ic_Twitter from "../../assets/image/PLV_ic_Twitter.svg";
 
 const Wrapper = styled.div`
   position: relative;
   width: 100%;
+
+  .left-content {
+    display: flex;
+    align-items: center;
+
+    .media {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      width: 140px;
+
+      padding-top: 5px;
+      margin-left: 20px;
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+
+      img {
+        cursor: pointer;
+
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+  .right-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    .chain-logo {
+      height: 100%;
+
+      display: flex;
+
+      margin-right: 15px;
+
+      .celo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        height: 100%;
+
+        .celo-wrapper {
+          display: flex;
+          justify-content: center;
+          align-items: flex-end;
+          padding-bottom: 2px;
+
+          height: 100%;
+          width: 30px;
+
+          border-radius: 0 0 12px 12px;
+
+          background: #edbc3d;
+
+          .img-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 28px;
+            height: 28px;
+
+            background: #000;
+            border-radius: 50%;
+
+            img {
+              width: 24px;
+              height: 24px;
+            }
+          }
+        }
+
+        span {
+          margin-top: 2px;
+
+          font-size: 10px;
+          color: #fff;
+        }
+      }
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+      }
+
+      .polygon-wrapper {
+        display: flex;
+        align-items: flex-end;
+
+        margin-left: 5px;
+        padding-bottom: 12px;
+
+        img {
+          width: 24px;
+          height: 24px;
+
+          filter: grayscale(100%);
+          -webkit-filter: grayscale(100%);
+          -moz-filter: grayscale(100%);
+          -ms-filter: grayscale(100%);
+          -o-filter: grayscale(100%);
+        }
+      }
+    }
+  }
 `;
 
 const StyledNav = styled.nav<{ showMenu: boolean }>`
@@ -29,7 +152,7 @@ const StyledNav = styled.nav<{ showMenu: boolean }>`
   padding-right: 16px;
   width: 100%;
   height: ${MENU_HEIGHT}px;
-  background-color: #61c0e6;
+  background-color: #2a3137;
   border-bottom: solid 2px rgba(133, 133, 133, 0.1);
   z-index: 20;
   transform: translate3d(0, 0, 0);
@@ -77,7 +200,7 @@ const Menu: React.FC<NavProps> = ({
   profile,
   children,
   faucet,
-  faucetLoading
+  faucetLoading,
 }) => {
   const { isXl } = useMatchBreakpoints();
   const isMobile = isXl === false;
@@ -121,27 +244,86 @@ const Menu: React.FC<NavProps> = ({
   return (
     <Wrapper>
       <StyledNav showMenu={showMenu}>
-        <Logo
-          isPushed={isPushed}
-          togglePush={() => setIsPushed((prevState: boolean) => !prevState)}
-          isDark={isDark}
-          href={homeLink?.href ?? "/"}
-        />
-        <Flex>
-          {faucet && account && <div>
-            <Button
-              marginRight="5px"
-              scale="sm"
-              variant="success"
-              onClick={faucet}
-              isLoading={faucetLoading}
-              endIcon={faucetLoading ? <AutoRenewIcon spin color="currentColor" /> : null}
-            >
-              PolyFaucet
-            </Button>
-          </div>}
-          <UserBlock account={account} login={login} logout={logout} />
-        </Flex>
+        <div className="left-content">
+          <Logo
+            isPushed={isPushed}
+            togglePush={() => setIsPushed((prevState: boolean) => !prevState)}
+            isDark={isDark}
+            href={homeLink?.href ?? "/"}
+          />
+
+          <div className="media">
+            <a href="https://polydex.medium.com/" target="_blank">
+              <img src={PLV_ic_Medium} alt={"PLV_ic_Medium"} />
+            </a>
+            <a href="https://twitter.com/polydexfi" target="_blank">
+              <img src={PLV_ic_Twitter} alt={"PLV_ic_Twitter"} />
+            </a>
+
+            <Dropdown key={"telegram"} position="bottom" target={<img src={PLV_ic_Telegram} alt={"PLV_ic_Telegram"} />}>
+              {[
+                {
+                  label: "Announcements",
+                  href: "https://t.me/polydexannouncement",
+                },
+                {
+                  label: "English",
+                  href: "https://t.me/polydexfi",
+                },
+              ].map((item: any) => (
+                <Link external key={item.label} href={item.href} aria-label={item.label} color="textSubtle">
+                  {item.label}
+                </Link>
+              ))}
+            </Dropdown>
+
+            <a href="https://discord.com/invite/WtksUPQSRm" target="_blank">
+              <img src={PLV_ic_Discord} alt={"PLV_ic_Discord"} />
+            </a>
+            <a href="mailto:contact@polydex.fi">
+              <img src={PLV_ic_Email} alt={"PLV_ic_Email"} />
+            </a>
+          </div>
+        </div>
+
+        <div className="right-content">
+          <div className="chain-logo">
+            <div className="celo">
+              <div className="celo-wrapper">
+                <div className="img-wrapper">
+                  <img src={celo} alt="celo" />
+                </div>
+              </div>
+
+              <span>celo</span>
+            </div>
+
+            <a href="https://www.polydex.fi/">
+              <div className="polygon-wrapper">
+                <img src={polygon} alt="polygon" />
+              </div>
+            </a>
+          </div>
+
+          <Flex>
+            {faucet && account && (
+              <div>
+                <Button
+                  marginRight="5px"
+                  scale="sm"
+                  variant="success"
+                  onClick={faucet}
+                  isLoading={faucetLoading}
+                  endIcon={faucetLoading ? <AutoRenewIcon spin color="currentColor" /> : null}
+                >
+                  PolyFaucet
+                </Button>
+              </div>
+            )}
+
+            <UserBlock account={account} login={login} logout={logout} />
+          </Flex>
+        </div>
       </StyledNav>
       <BodyWrapper>
         <Panel

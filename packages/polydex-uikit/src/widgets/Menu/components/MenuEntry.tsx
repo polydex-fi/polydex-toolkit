@@ -33,9 +33,10 @@ const MenuEntry = styled.div<Props>`
   height: ${MENU_ENTRY_HEIGHT}px;
   padding: ${({ secondary }) => (secondary ? "0 32px" : "0 16px")};
   font-size: ${({ secondary }) => (secondary ? "14px" : "16px")};
-  background-color: ${({ secondary, theme }) => (secondary ? theme.colors.background : "transparent")};
   color: ${({ theme }) => theme.colors.textSubtle};
-  box-shadow: ${({ isActive, theme }) => (isActive ? `inset 4px 0px 0px ${theme.colors.primary}` : "none")};
+  box-shadow: ${({ isActive }) => (isActive ? `inset 4px 0px 0px #28b073` : "none")};
+  background-color: ${({ isActive, secondary, theme }) =>
+    isActive ? "#ecf7f1 !important" : secondary ? theme.colors.background : "transparent"};
 
   a {
     display: flex;
@@ -58,7 +59,7 @@ const MenuEntry = styled.div<Props>`
   &.rainbow {
     background-clip: text;
     animation: ${rainbowAnimation} 3s ease-in-out infinite;
-    background: ${({ theme }) => theme.colors.gradients.bubblegum};
+    background-color: #ecf7f1;
     background-size: 400% 100%;
   }
 `;
