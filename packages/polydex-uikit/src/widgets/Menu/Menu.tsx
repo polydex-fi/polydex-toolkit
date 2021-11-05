@@ -202,8 +202,8 @@ const Menu: React.FC<NavProps> = ({
   faucet,
   faucetLoading,
 }) => {
-  const { isXl } = useMatchBreakpoints();
-  const isMobile = isXl === false;
+  const { isXl, isXxl } = useMatchBreakpoints();
+  const isMobile = !(isXl || isXxl);
   const [isPushed, setIsPushed] = useState(!isMobile);
   const [showMenu, setShowMenu] = useState(true);
   const refPrevOffset = useRef(window.pageYOffset);
