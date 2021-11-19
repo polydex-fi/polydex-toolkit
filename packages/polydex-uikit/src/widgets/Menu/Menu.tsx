@@ -312,11 +312,12 @@ const Menu: React.FC<NavProps> = ({
                   marginRight="5px"
                   scale="sm"
                   variant="success"
+                  style={{height: '35px', borderRadius: '10px', background: '#edbc3d', color: 'black'}}
                   onClick={faucet}
                   isLoading={faucetLoading}
                   endIcon={faucetLoading ? <AutoRenewIcon spin color="currentColor" /> : null}
                 >
-                  PolyFaucet
+                  CeloFaucet
                 </Button>
               </div>
             )}
