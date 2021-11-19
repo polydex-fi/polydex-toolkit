@@ -14,8 +14,9 @@ import UserBlock from "./components/UserBlock";
 import { NavProps } from "./types";
 import { MENU_HEIGHT, SIDEBAR_WIDTH_REDUCED, SIDEBAR_WIDTH_FULL, socials } from "./config";
 
-import polygon from "../../assets/image/polygon.svg";
+import cronos from "../../assets/image/krypto.svg";
 import celo from "../../assets/image/celo.svg";
+import polygon from "../../assets/image/polygon.svg";
 import PLV_ic_Discord from "../../assets/image/PLV_ic_Discord.svg";
 import PLV_ic_Email from "../../assets/image/PLV_ic_Email.svg";
 import PLV_ic_Medium from "../../assets/image/PLV_ic_Medium.svg";
@@ -77,14 +78,13 @@ const Wrapper = styled.div`
           display: flex;
           justify-content: center;
           align-items: flex-end;
-          padding-bottom: 2px;
 
           height: 100%;
           width: 30px;
 
           border-radius: 0 0 12px 12px;
 
-          background: #edbc3d;
+          background: #ff9d00;
 
           .img-wrapper {
             display: flex;
@@ -94,7 +94,6 @@ const Wrapper = styled.div`
             width: 28px;
             height: 28px;
 
-            background: #000;
             border-radius: 50%;
 
             img {
@@ -105,8 +104,6 @@ const Wrapper = styled.div`
         }
 
         span {
-          margin-top: 2px;
-
           font-size: 10px;
           color: #fff;
         }
@@ -129,11 +126,7 @@ const Wrapper = styled.div`
           width: 24px;
           height: 24px;
 
-          filter: grayscale(100%);
-          -webkit-filter: grayscale(100%);
-          -moz-filter: grayscale(100%);
-          -ms-filter: grayscale(100%);
-          -o-filter: grayscale(100%);
+          border-radius: 50%;
         }
       }
     }
@@ -152,7 +145,7 @@ const StyledNav = styled.nav<{ showMenu: boolean }>`
   padding-right: 16px;
   width: 100%;
   height: ${MENU_HEIGHT}px;
-  background-color: #2a3137;
+  background-color: #010b18;
   border-bottom: solid 2px rgba(133, 133, 133, 0.1);
   z-index: 20;
   transform: translate3d(0, 0, 0);
@@ -256,7 +249,7 @@ const Menu: React.FC<NavProps> = ({
             <a href="https://polydex.medium.com/" target="_blank">
               <img src={PLV_ic_Medium} alt={"PLV_ic_Medium"} />
             </a>
-            <a href="https://twitter.com/polydexfi" target="_blank">
+            <a href="https://twitter.com/KryptoDex" target="_blank">
               <img src={PLV_ic_Twitter} alt={"PLV_ic_Twitter"} />
             </a>
 
@@ -291,12 +284,18 @@ const Menu: React.FC<NavProps> = ({
             <div className="celo">
               <div className="celo-wrapper">
                 <div className="img-wrapper">
-                  <img src={celo} alt="celo" />
+                  <img src={cronos} alt="Cronos" />
                 </div>
               </div>
 
-              <span>celo</span>
+              <span>Cronos</span>
             </div>
+
+            <a href="https://www.celodex.org/">
+              <div className="polygon-wrapper">
+                <img src={celo} alt="celo" />
+              </div>
+            </a>
 
             <a href="https://www.polydex.fi/">
               <div className="polygon-wrapper">

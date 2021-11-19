@@ -174,7 +174,7 @@ export const socials = [
   {
     label: "Twitter",
     icon: "TwitterIcon",
-    href: "https://twitter.com/polydexfi",
+    href: "https://twitter.com/KryptoDex",
   },
 ];
 

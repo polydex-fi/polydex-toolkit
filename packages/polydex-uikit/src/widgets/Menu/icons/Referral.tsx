@@ -26,7 +26,7 @@ const Icon: React.FC<SvgProps> = (props) => {
       />
       <path
         fill="#FFF"
-        stroke="#2C3239"
+        stroke="#129DFF"
         strokeWidth={1.6043}
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -34,8 +34,8 @@ const Icon: React.FC<SvgProps> = (props) => {
         d="M80.727 34.343L69.968 15.707a6.509 6.509 0 00-5.636-3.254H42.813a6.52 6.52 0 00-5.636 3.253l-3.447 5.971-7.312 12.665a6.509 6.509 0 000 6.507l7.312 12.665h5.072l2.79-4.832-6.401-11.086 6.401-11.086 2.79-4.832h18.381l9.19 15.918-9.19 15.918H49.454l-3.447 5.971a6.504 6.504 0 01-4.415 3.136c.398.076.807.117 1.221.117h21.519a6.508 6.508 0 005.636-3.254L80.727 40.85a6.509 6.509 0 000-6.507z"
       />
       <path
-        fill="#00D278"
-        stroke="#2C3239"
+        fill="#129DFF"
+        stroke="#129DFF"
         strokeWidth={1.6043}
         strokeLinecap="round"
         strokeLinejoin="round"

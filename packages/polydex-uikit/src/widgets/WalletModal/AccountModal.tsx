@@ -23,8 +23,8 @@ const AccountModal: React.FC<Props> = ({ account, logout, onDismiss = () => null
       {account}
     </Text>
     <Flex mb="32px">
-      <LinkExternal small href={`https://explorer.celo.org/address/${account}`} mr="16px">
-        View on Celo Explorer
+      <LinkExternal small href={`https://cronos.crypto.org/explorer/address/${account}`} mr="16px">
+        View on Cronos Explorer
       </LinkExternal>
       <CopyToClipboard toCopy={account}>Copy Address</CopyToClipboard>
     </Flex>

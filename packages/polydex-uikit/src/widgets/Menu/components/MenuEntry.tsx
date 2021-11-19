@@ -34,9 +34,9 @@ const MenuEntry = styled.div<Props>`
   padding: ${({ secondary }) => (secondary ? "0 32px" : "0 16px")};
   font-size: ${({ secondary }) => (secondary ? "14px" : "16px")};
   color: ${({ theme }) => theme.colors.textSubtle};
-  box-shadow: ${({ isActive }) => (isActive ? `inset 4px 0px 0px #28b073` : "none")};
+  box-shadow: ${({ isActive }) => (isActive ? `inset 4px 0px 0px #129dff` : "none")};
   background-color: ${({ isActive, secondary, theme }) =>
-    isActive ? "#ecf7f1 !important" : secondary ? theme.colors.background : "transparent"};
+    isActive ? "#129dff50 !important" : secondary ? theme.colors.background : "transparent"};
 
   a {
     display: flex;

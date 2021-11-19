@@ -67,7 +67,7 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
       <LogoIcon className="mobile-icon" />
       {/* <LogoWithText className="desktop-icon" isDark={isDark} /> */}
 
-      <img className="celo-logo" src="https://storage.googleapis.com/polydex/celodex.svg" alt="logo" />
+      <img className="celo-logo" src="https://storage.googleapis.com/polydex/kryptodex.svg" alt="logo" />
     </>
   );
 
