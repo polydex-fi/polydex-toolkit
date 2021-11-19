@@ -246,7 +246,7 @@ const Menu: React.FC<NavProps> = ({
           />
 
           <div className="media">
-            <a href="https://polydex.medium.com/" target="_blank">
+            <a href="https://kryptodex.medium.com/" target="_blank">
               <img src={PLV_ic_Medium} alt={"PLV_ic_Medium"} />
             </a>
             <a href="https://twitter.com/KryptoDex" target="_blank">
@@ -257,11 +257,11 @@ const Menu: React.FC<NavProps> = ({
               {[
                 {
                   label: "Announcements",
-                  href: "https://t.me/polydexannouncement",
+                  href: "https://t.me/InterDeFiAnnouncement",
                 },
                 {
                   label: "English",
-                  href: "https://t.me/polydexfi",
+                  href: "https://t.me/InterDeFi",
                 },
               ].map((item: any) => (
                 <Link external key={item.label} href={item.href} aria-label={item.label} color="textSubtle">
