@@ -163,11 +163,11 @@ export const socials = [
     items: [
       {
         label: "Announcements",
-        href: "https://t.me/polydexannouncement",
+        href: "https://t.me/InterDeFiAnnouncement",
       },
       {
         label: "English",
-        href: "https://t.me/polydexfi",
+        href: "https://t.me/InterDeFi",
       }
     ],
   },
