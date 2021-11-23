@@ -15,6 +15,7 @@ import { NavProps } from "./types";
 import { MENU_HEIGHT, SIDEBAR_WIDTH_REDUCED, SIDEBAR_WIDTH_FULL, socials } from "./config";
 
 import polygon from "../../assets/image/polygon.svg";
+import cronos from "../../assets/image/cronos.svg";
 import celo from "../../assets/image/celo.svg";
 import PLV_ic_Discord from "../../assets/image/PLV_ic_Discord.svg";
 import PLV_ic_Email from "../../assets/image/PLV_ic_Email.svg";
@@ -123,6 +124,7 @@ const Wrapper = styled.div`
         align-items: flex-end;
 
         margin-left: 5px;
+        margin-right: 5px;
         padding-bottom: 12px;
 
         img {
@@ -253,10 +255,10 @@ const Menu: React.FC<NavProps> = ({
           />
 
           <div className="media">
-            <a href="https://polydex.medium.com/" target="_blank">
+            <a href="https://kryptodex.medium.com/" target="_blank">
               <img src={PLV_ic_Medium} alt={"PLV_ic_Medium"} />
             </a>
-            <a href="https://twitter.com/polydexfi" target="_blank">
+            <a href="https://twitter.com/KryptoDex" target="_blank">
               <img src={PLV_ic_Twitter} alt={"PLV_ic_Twitter"} />
             </a>
 
@@ -264,11 +266,11 @@ const Menu: React.FC<NavProps> = ({
               {[
                 {
                   label: "Announcements",
-                  href: "https://t.me/polydexannouncement",
+                  href: "https://t.me/InterDeFiAnnouncement",
                 },
                 {
                   label: "English",
-                  href: "https://t.me/polydexfi",
+                  href: "https://t.me/InterDeFi",
                 },
               ].map((item: any) => (
                 <Link external key={item.label} href={item.href} aria-label={item.label} color="textSubtle">
@@ -288,6 +290,13 @@ const Menu: React.FC<NavProps> = ({
 
         <div className="right-content">
           <div className="chain-logo">
+            
+            <a href="https://www.kryptodex.org/">
+              <div className="polygon-wrapper">
+                <img src={cronos} alt="Cronos" />
+              </div>
+            </a>
+
             <div className="celo">
               <div className="celo-wrapper">
                 <div className="img-wrapper">
@@ -297,7 +306,7 @@ const Menu: React.FC<NavProps> = ({
 
               <span>celo</span>
             </div>
-
+            
             <a href="https://www.polydex.fi/">
               <div className="polygon-wrapper">
                 <img src={polygon} alt="polygon" />

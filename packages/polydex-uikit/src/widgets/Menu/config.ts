@@ -137,11 +137,11 @@ export const links = [
       },
       {
         label: 'Docs',
-        href: 'https://docs.polydex.fi/',
+        href: 'https://docs.celodex.org/',
       },
       {
         label: 'Blog',
-        href: 'https://polydex.medium.com',
+        href: 'https://kryptodex.medium.com',
       },
       {
         label: 'Discord',
@@ -163,18 +163,18 @@ export const socials = [
     items: [
       {
         label: "Announcements",
-        href: "https://t.me/polydexannouncement",
+        href: "https://t.me/InterDeFiAnnouncement",
       },
       {
         label: "English",
-        href: "https://t.me/polydexfi",
+        href: "https://t.me/InterDeFi",
       }
     ],
   },
   {
     label: "Twitter",
     icon: "TwitterIcon",
-    href: "https://twitter.com/polydexfi",
+    href: "https://twitter.com/KryptoDex",
   },
 ];
 
