@@ -255,10 +255,10 @@ const Menu: React.FC<NavProps> = ({
           />
 
           <div className="media">
-            <a href="https://kryptodex.medium.com/" target="_blank">
+            <a href="https://celodex.medium.com/" target="_blank">
               <img src={PLV_ic_Medium} alt={"PLV_ic_Medium"} />
             </a>
-            <a href="https://twitter.com/KryptoDex" target="_blank">
+            <a href="https://twitter.com/CeloDex" target="_blank">
               <img src={PLV_ic_Twitter} alt={"PLV_ic_Twitter"} />
             </a>
 

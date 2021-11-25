@@ -141,7 +141,7 @@ export const links = [
       },
       {
         label: 'Blog',
-        href: 'https://kryptodex.medium.com',
+        href: 'https://celodex.medium.com',
       },
       {
         label: 'Discord',
@@ -174,7 +174,7 @@ export const socials = [
   {
     label: "Twitter",
     icon: "TwitterIcon",
-    href: "https://twitter.com/KryptoDex",
+    href: "https://twitter.com/CeloDex",
   },
 ];
 
