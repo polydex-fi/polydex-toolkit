@@ -153,6 +153,11 @@ export const links = [
 
 export const socials = [
   {
+    label: "Coingecko",
+    icon: "CoingeckoIcon",
+    href: "https://geckoterminal.com/polygon_pos/pools/0xd876d019590b252463732f3153475d04d57ae13f",
+  },
+  {
     label: "Discord",
     icon: "DiscordIcon",
     href: "https://discord.gg/WtksUPQSRm",
